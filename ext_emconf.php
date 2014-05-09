@@ -28,22 +28,22 @@ $EM_CONF[$_EXTKEY] = array (
   'lockType' => '',
   'author_company' => '',
   'version' => '1.3.0',
-  'constraints' => 
+  'constraints' =>
   array (
-    'depends' => 
+    'depends' =>
     array (
-      'typo3' => '4.5.0-6.1.99',
+      'typo3' => '4.5.0-6.2.99',
       'tesseract' => '1.7.0-0.0.0',
     ),
-    'conflicts' => 
+    'conflicts' =>
     array (
     ),
-    'suggests' => 
+    'suggests' =>
     array (
     ),
   ),
   '_md5_values_when_last_written' => 'a:18:{s:9:"ChangeLog";s:4:"7d2c";s:10:"README.txt";s:4:"5078";s:25:"class.tx_fluiddisplay.php";s:4:"e712";s:12:"ext_icon.gif";s:4:"a406";s:17:"ext_localconf.php";s:4:"909d";s:14:"ext_tables.php";s:4:"eaf9";s:14:"ext_tables.sql";s:4:"9c07";s:46:"Configuration/TCA/tx_fluiddisplay_displays.php";s:4:"23d1";s:67:"Resources/Private/Language/locallang_csh_txfluiddisplaydisplays.xml";s:4:"a27f";s:43:"Resources/Private/Language/locallang_db.xml";s:4:"afb1";s:50:"Resources/Public/Icons/add_fluiddisplay_wizard.png";s:4:"9cf0";s:51:"Resources/Public/Icons/tx_fluiddisplay_displays.png";s:4:"cd04";s:38:"Samples/class.tx_fluiddisplay_hook.php";s:4:"9c66";s:21:"Samples/locallang.xml";s:4:"cdf6";s:27:"Samples/sampleTemplate.html";s:4:"ca31";s:35:"Samples/Partials/samplePartial.html";s:4:"3bef";s:14:"doc/manual.pdf";s:4:"c1a8";s:14:"doc/manual.sxw";s:4:"02f6";}',
-  'suggests' => 
+  'suggests' =>
   array (
   ),
   'comment' => 'Compatibility with TYPO3 6.0 and 6.1; FAL support; new view helper for page title substitution.',
