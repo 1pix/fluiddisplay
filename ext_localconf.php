@@ -2,17 +2,18 @@
 if (!defined ('TYPO3_MODE')) {
  	die ('Access denied.');
 }
-t3lib_extMgm::addUserTSConfig('
-	options.saveDocNew.tx_fluiddisplay_displays=1
-');
 
 // Register as Data Consumer service
 // Note that the subtype corresponds to the name of the database table
-t3lib_extMgm::addService($_EXTKEY,  'dataconsumer' /* sv type */,  'tx_fluiddisplay_dataconsumer' /* sv key */,
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addService(
+	'fluiddisplay',
+	// Service type
+	'dataconsumer',
+	// Service key
+	'tx_fluiddisplay_dataconsumer',
 	array(
-
-		'title' => 'Data Display Engine',
-		'description' => 'Generic Data Consumer for recordset-type data structures',
+		'title' => 'Fluid-based Data Consumer',
+		'description' => 'Data Consumer for recordset-type data structures, based on Fluid templating',
 
 		'subtype' => 'tx_fluiddisplay_displays',
 
@@ -23,8 +24,7 @@ t3lib_extMgm::addService($_EXTKEY,  'dataconsumer' /* sv type */,  'tx_fluiddisp
 		'os' => '',
 		'exec' => '',
 
-		'classFile' => t3lib_extMgm::extPath($_EXTKEY, 'class.tx_fluiddisplay.php'),
-		'className' => 'tx_fluiddisplay',
+		'className' => 'Tesseract\Fluiddisplay\Component\DataConsumer',
 	)
 );
-?>
+

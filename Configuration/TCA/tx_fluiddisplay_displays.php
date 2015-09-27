@@ -1,12 +1,26 @@
 <?php
 if (!defined ('TYPO3_MODE')) 	die ('Access denied.');
 
-$TCA['tx_fluiddisplay_displays'] = array(
-	'ctrl' => $GLOBALS['TCA']['tx_fluiddisplay_displays']['ctrl'],
+return array(
+	'ctrl' => array(
+		'title'     => 'LLL:EXT:fluiddisplay/Resources/Private/Language/locallang_db.xml:tx_fluiddisplay_displays',
+		'label'     => 'title',
+		'tstamp'    => 'tstamp',
+		'crdate'    => 'crdate',
+		'cruser_id' => 'cruser_id',
+		'default_sortby' => 'ORDER BY title',
+		'delete' => 'deleted',
+		'enablecolumns' => array(
+			'disabled' => 'hidden',
+		),
+		'searchFields' => 'title,description,template',
+		'typeicon_classes' => array(
+			'default' => 'extensions-fluiddisplay-display'
+		),
+	),
 	'interface' => array(
 		'showRecordFieldList' => 'hidden,title,description'
 	),
-	'feInterface' => $GLOBALS['TCA']['tx_fluiddisplay_displays']['feInterface'],
 	'columns' => array(
 		'hidden' => array(
 			'exclude' => 1,
@@ -49,6 +63,12 @@ $TCA['tx_fluiddisplay_displays'] = array(
 						'title' => 'Link',
 						'icon' => 'link_popup.gif',
 						'script' => 'browse_links.php?mode=wizard',
+						'module' => array(
+							'name' => 'wizard_element_browser',
+							'urlParameters' => array(
+								'mode' => 'wizard'
+							)
+						),
 						'JSopenParams' => 'height=600,width=700,status=0,menubar=0,scrollbars=1',
 						'params' => array(
 							'blindLinkOptions' => 'page,url,mail,spec,folder',
@@ -66,4 +86,3 @@ $TCA['tx_fluiddisplay_displays'] = array(
 		'1' => array('showitem' => 'description')
 	)
 );
-?>

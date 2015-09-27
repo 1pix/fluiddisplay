@@ -1,17 +1,20 @@
 <?php
+namespace Tesseract\Fluiddisplay\ViewHelpers;
 
-/*                                                                        *
- * This script is part of the TYPO3 project - inspiring people to share!  *
- *                                                                        *
- * TYPO3 is free software; you can redistribute it and/or modify it under *
- * the terms of the GNU General Public License version 2 as published by  *
- * the Free Software Foundation.                                          *
- *                                                                        *
- * This script is distributed in the hope that it will be useful, but     *
- * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHAN-    *
- * TABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General      *
- * Public License for more details.                                       *
- *                                                                        */
+/*
+ * This file is part of the TYPO3 CMS project.
+ *
+ * It is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License, either version 2
+ * of the License, or any later version.
+ *
+ * For the full copyright and license information, please read the
+ * LICENSE.txt file that was distributed with this source code.
+ *
+ * The TYPO3 project - inspiring people to share!
+ */
+
+use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper;
 
 /**
  * This class is a Fluiddisplay view helper for the Fluid templating engine.
@@ -22,7 +25,7 @@
  * = Examples =
  *
  * Assuming that the namespace has been declared as follows:
- * {namespace fluiddisplay = Tx_Fluiddisplay_ViewHelpers}
+ * {namespace fluiddisplay = Tesseract\Fluiddisplay\ViewHelpers}
  *
  * <code title="Simple string with expression to evaluate">
  * <fluiddisplay:substitutePageTitle output="true">{record.header}</fluiddisplay:substitutePageTitle>
@@ -30,14 +33,13 @@
  * <output>
  * Foo (assuming the "header" property of object "record" was "Foo")
  * </output>
- * NOTE: if the output property is not set or set to false, the view helper will return an empty string
+ * NOTE: if the output property is not set or set to false, the view helper will return an empty string.
  *
  * @package TYPO3
  * @subpackage tx_fluiddisplay
  * @author Francois Suter <typo3@cobweb.ch>
- * @version $Id$
  */
-class Tx_Fluiddisplay_ViewHelpers_SubstitutePageTitleViewHelper extends Tx_Fluid_Core_ViewHelper_AbstractViewHelper {
+class SubstitutePageTitleViewHelper extends AbstractViewHelper {
 
 	/**
 	 * Substitutes the page title with the view helper's content
@@ -58,5 +60,3 @@ class Tx_Fluiddisplay_ViewHelpers_SubstitutePageTitleViewHelper extends Tx_Fluid
 	}
 
 }
-
-?>
