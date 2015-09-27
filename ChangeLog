@@ -2,6 +2,7 @@
 
 	* Verified compatibility with TYPO3 CMS 7, resolves #69939
 	* Added reference to description field, resolves #70133
+	* Moved documentation to reST, resolves #69940
 
 2014-05-09 Francois Suter (Cobweb)  <typo3@cobweb.ch>
 

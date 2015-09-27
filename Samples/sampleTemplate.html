@@ -1,4 +1,4 @@
-{namespace expression = Tx_Expressions_ViewHelpers}
+{namespace expression = Cobweb\Expressions\ViewHelpers}
 
 <!--
 This sample Fluid template demonstrates the usage of Fluid with a Tesseract data structure
@@ -7,13 +7,10 @@ It is meant to be coupled to the simple query:
 SELECT * FROM tt_content
 -->
 
-<!--Remove comments to view the full data stucture
-<f:debug>{datastructure}</f:debug>
--->
 <h2><f:translate key="LLL:EXT:fluiddisplay/Samples/locallang.xml:all_content_elements" /></h2>
 <p><f:translate key="LLL:EXT:fluiddisplay/Samples/locallang.xml:number_content_elements" arguments="{0: datastructure.tt_content.totalCount}" /></p>
 <ul>
-	<!--Group by content element types-->
+<!--Group by content element types-->
 <f:groupedFor
 	each="{datastructure.tt_content.records}"
 	as="recordTypes"
@@ -21,7 +18,7 @@ SELECT * FROM tt_content
 	groupKey="CType">
 	<li><f:translate key="LLL:EXT:fluiddisplay/Samples/locallang.xml:content_of_type" arguments="{0: CType}" />
 		<ol>
-				<!--If type is plugin, group again by plugin type-->
+			<!--If type is plugin, group again by plugin type-->
 			<f:if condition="{0: CType} == {0: 'list'}">
 				<f:then>
 					<ul>
@@ -33,7 +30,7 @@ SELECT * FROM tt_content
 							<li><f:translate key="LLL:EXT:fluiddisplay/Samples/locallang.xml:plugin_of_type" arguments="{0: list_type}" />
 								<ol>
 									<f:for each="{pluginTypes}" as="plugin">
-											<!--Use a partial to avoid code duplication-->
+										<!--Use a partial to avoid code duplication-->
 										<f:render partial="samplePartial" arguments="{element: plugin}" />
 									</f:for>
 								</ol>
@@ -41,10 +38,10 @@ SELECT * FROM tt_content
 						</f:groupedFor>
 					</ul>
 				</f:then>
-					<!--For all other content element types, just display them as a list-->
+				<!--For all other content element types, just display them as a list-->
 				<f:else>
 					<f:for each="{recordTypes}" as="element">
-							<!--Use a partial to avoid code duplication-->
+						<!--Use a partial to avoid code duplication-->
 						<f:render partial="samplePartial" arguments="{element: element}" />
 					</f:for>
 				</f:else>
