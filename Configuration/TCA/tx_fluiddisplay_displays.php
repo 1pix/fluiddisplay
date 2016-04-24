@@ -1,5 +1,7 @@
 <?php
-if (!defined ('TYPO3_MODE')) 	die ('Access denied.');
+if (!defined ('TYPO3_MODE')) {
+	die ('Access denied.');
+}
 
 return array(
 	'ctrl' => array(
@@ -16,7 +18,7 @@ return array(
 		),
 		'searchFields' => 'title,description,template',
 		'typeicon_classes' => array(
-			'default' => 'extensions-fluiddisplay-display'
+			'default' => 'tx_fluiddisplay-display'
 		),
 	),
 	'interface' => array(
@@ -63,7 +65,6 @@ return array(
 						'type' => 'popup',
 						'title' => 'Link',
 						'icon' => 'link_popup.gif',
-						'script' => 'browse_links.php?mode=wizard',
 						'module' => array(
 							'name' => 'wizard_element_browser',
 							'urlParameters' => array(

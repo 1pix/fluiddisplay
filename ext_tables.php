@@ -12,13 +12,14 @@ if (!defined ('TYPO3_MODE')) {
 );
 
 // Register sprite icon for fluiddisplay table
-$extensionRelativePath = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath($_EXTKEY);
-$icon = array(
-	'display' => $extensionRelativePath . 'Resources/Public/Icons/FluidDisplay.png'
-);
-\TYPO3\CMS\Backend\Sprite\SpriteManager::addSingleIcons(
-	$icon,
-	$_EXTKEY
+/** @var \TYPO3\CMS\Core\Imaging\IconRegistry $iconRegistry */
+$iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
+$iconRegistry->registerIcon(
+        'tx_fluiddisplay-display',
+        \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
+        [
+            'source' => 'EXT:fluiddisplay/Resources/Public/Icons/FluidDisplay.png'
+        ]
 );
 
 // Add a wizard for adding a fluiddisplay

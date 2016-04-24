@@ -24,7 +24,7 @@ if (!defined ('TYPO3_MODE')) {
 		'os' => '',
 		'exec' => '',
 
-		'className' => 'Tesseract\Fluiddisplay\Component\DataConsumer',
+		'className' => \Tesseract\Fluiddisplay\Component\DataConsumer::class,
 	)
 );
 

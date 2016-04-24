@@ -19,6 +19,7 @@ use Tesseract\Tesseract\Tesseract;
 use Tesseract\Tesseract\Utility\Utilities;
 use TYPO3\CMS\Core\Messaging\FlashMessage;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Fluid\View\StandaloneView;
 
 /**
  * This class is the actual data consumer for extension fluiddisplay.
@@ -46,7 +47,7 @@ class DataConsumer extends FrontendConsumerBase
      *
      * This is necessary because services are managed as singletons.
      *
-     * @return    void
+     * @return void
      */
     public function reset()
     {
@@ -60,7 +61,7 @@ class DataConsumer extends FrontendConsumerBase
     /**
      * Returns the filter data.
      *
-     * @return    array
+     * @return array
      */
     public function getFilter()
     {
@@ -87,7 +88,7 @@ class DataConsumer extends FrontendConsumerBase
      */
     public function acceptsDataStructure($type)
     {
-        return $type == Tesseract::RECORDSET_STRUCTURE_TYPE;
+        return $type === Tesseract::RECORDSET_STRUCTURE_TYPE;
     }
 
     /**
@@ -145,8 +146,8 @@ class DataConsumer extends FrontendConsumerBase
             $filePath = Utilities::getTemplateFilePath($this->consumerData['template']);
 
             // Instantiate a Fluid stand-alone view and load the template file
-            /** @var $view \TYPO3\CMS\Fluid\View\StandaloneView */
-            $view = GeneralUtility::makeInstance('TYPO3\\CMS\\Fluid\\View\\StandaloneView');
+            /** @var $view StandaloneView */
+            $view = GeneralUtility::makeInstance(StandaloneView::class);
             $view->setTemplatePathAndFilename($filePath);
             // Assign the Tesseract Data Structure
             $view->assign('datastructure', $this->structure);
