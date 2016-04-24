@@ -4,6 +4,7 @@
 	* Reformatted code according to PSR-2, resolves #75892
 	* Cleaned up code, resolves #75893
 	* Moved language files to XLIFF, resolves #75894
+	* Released to TER as version 2.0.0, resolves #58679
 
 2015-09-27 Francois Suter (Cobweb)  <typo3@cobweb.ch>
 
