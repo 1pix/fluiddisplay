@@ -8,7 +8,7 @@ if (!defined ('TYPO3_MODE')) {
 // Add context sensitive help (csh) for this table
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
 	'tx_fluiddisplay_displays',
-	'EXT:' . $_EXTKEY . '/Resources/Private/Language/locallang_csh_txfluiddisplaydisplays.xml'
+	'EXT:' . $_EXTKEY . '/Resources/Private/Language/locallang_csh_txfluiddisplaydisplays.xlf'
 );
 
 // Register sprite icon for fluiddisplay table
@@ -25,7 +25,7 @@ $iconRegistry->registerIcon(
 // Add a wizard for adding a fluiddisplay
 $addTemplateDisplayWizard = array(
 	'type' => 'script',
-	'title' => 'LLL:EXT:fluiddisplay/Resources/Private/Language/locallang_db.xml:wizards.add_fluiddisplay',
+	'title' => 'LLL:EXT:fluiddisplay/Resources/Private/Language/locallang_db.xlf:wizards.add_fluiddisplay',
 	'script' => 'wizard_add.php',
 	'module' => array(
 		'name' => 'wizard_add'

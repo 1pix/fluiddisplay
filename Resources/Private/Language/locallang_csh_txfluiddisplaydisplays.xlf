@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-04-24T10:16:03Z" product-name="fluiddisplay">
+		<header/>
+		<body>
+			<trans-unit id=".alttitle" xml:space="preserve">
+				<source>Fluid Displays</source>
+			</trans-unit>
+			<trans-unit id=".description" xml:space="preserve">
+				<source>Data Consumers relying on the Fluid templating engine for rendering</source>
+			</trans-unit>
+			<trans-unit id="hidden.alttitle" xml:space="preserve">
+				<source>Hide</source>
+			</trans-unit>
+			<trans-unit id="hidden.description" xml:space="preserve">
+				<source>This field is not actively used inside Tesseract.</source>
+			</trans-unit>
+			<trans-unit id="hidden.details" xml:space="preserve">
+				<source>
+				This field is not considered by the existing components of Tesseract. It could be used to give a visual indication of an obsolete query.
+				May be used actively in the future or remove altogether.
+			</source>
+			</trans-unit>
+			<trans-unit id="title.alttitle" xml:space="preserve">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="title.description" xml:space="preserve">
+				<source>Some significant name or label for the template.</source>
+			</trans-unit>
+			<trans-unit id="description.alttitle" xml:space="preserve">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="description.description" xml:space="preserve">
+				<source>Purely descriptive field. Can be used for entering any necessary information about the template.</source>
+			</trans-unit>
+			<trans-unit id="template.alttitle" xml:space="preserve">
+				<source>Template file</source>
+			</trans-unit>
+			<trans-unit id="template.description" xml:space="preserve">
+				<source>Relative path to the Fluid template file.</source>
+			</trans-unit>
+			<trans-unit id="template.syntax" xml:space="preserve">
+				<source>Use a path relative to the site root, poiting to an authorised folder (likely &quot;fileadmin&quot;). &quot;EXT:&quot;-like syntax is allowed.</source>
+			</trans-unit>
+			<trans-unit id="template.details" xml:space="preserve">
+				<source>The directory name to the selected file will be used to search for Fluid partials.
+
+				Thus if the path to the file is &quot;fileadmin/templates/fluiddisplay/foo.html&quot;, partials should be placed in &quot;fileadmin/templates/fluiddisplay/Partials/&quot;. See the structure inside the &quot;Samples&quot; folder of extensions &quot;fluiddisplay&quot;.
+			</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

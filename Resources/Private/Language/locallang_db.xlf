@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-04-24T10:16:10Z" product-name="fluiddisplay">
+		<header/>
+		<body>
+			<trans-unit id="tx_fluiddisplay_displays" xml:space="preserve">
+				<source>Fluid based Display</source>
+			</trans-unit>
+			<trans-unit id="tx_fluiddisplay_displays.title" xml:space="preserve">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_fluiddisplay_displays.description" xml:space="preserve">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_fluiddisplay_displays.template" xml:space="preserve">
+				<source>Fluid Template</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

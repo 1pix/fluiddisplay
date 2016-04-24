@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-04-24T10:16:17Z" product-name="fluiddisplay">
+		<header/>
+		<body>
+			<trans-unit id="all_content_elements" xml:space="preserve">
+				<source>All content elements</source>
+			</trans-unit>
+			<trans-unit id="number_content_elements" xml:space="preserve">
+				<source>Number of content elements: %d</source>
+			</trans-unit>
+			<trans-unit id="content_of_type" xml:space="preserve">
+				<source>Elements of type %s</source>
+			</trans-unit>
+			<trans-unit id="plugin_of_type" xml:space="preserve">
+				<source>Plugins of type %s</source>
+			</trans-unit>
+			<trans-unit id="expression_view_helper" xml:space="preserve">
+				<source>Expressions view helper</source>
+			</trans-unit>
+			<trans-unit id="expression_view_helper_details" xml:space="preserve">
+				<source>Additional demonstration of the &quot;expressions&quot; view helper (related to extension &quot;expressions&quot;). Assumes parameters are given in the URL such as &quot;?tx_displaycontroller[foo]=bar&quot;.</source>
+			</trans-unit>
+			<trans-unit id="expression_evaluation" xml:space="preserve">
+				<source>Evaluation of expression</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

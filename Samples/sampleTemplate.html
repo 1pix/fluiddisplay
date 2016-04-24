@@ -7,8 +7,8 @@ It is meant to be coupled to the simple query:
 SELECT * FROM tt_content
 -->
 
-<h2><f:translate key="LLL:EXT:fluiddisplay/Samples/locallang.xml:all_content_elements" /></h2>
-<p><f:translate key="LLL:EXT:fluiddisplay/Samples/locallang.xml:number_content_elements" arguments="{0: datastructure.tt_content.totalCount}" /></p>
+<h2><f:translate key="LLL:EXT:fluiddisplay/Samples/locallang.xlf:all_content_elements" /></h2>
+<p><f:translate key="LLL:EXT:fluiddisplay/Samples/locallang.xlf:number_content_elements" arguments="{0: datastructure.tt_content.totalCount}" /></p>
 <ul>
 <!--Group by content element types-->
 <f:groupedFor
@@ -16,7 +16,7 @@ SELECT * FROM tt_content
 	as="recordTypes"
 	groupBy="CType"
 	groupKey="CType">
-	<li><f:translate key="LLL:EXT:fluiddisplay/Samples/locallang.xml:content_of_type" arguments="{0: CType}" />
+	<li><f:translate key="LLL:EXT:fluiddisplay/Samples/locallang.xlf:content_of_type" arguments="{0: CType}" />
 		<ol>
 			<!--If type is plugin, group again by plugin type-->
 			<f:if condition="{0: CType} == {0: 'list'}">
@@ -27,7 +27,7 @@ SELECT * FROM tt_content
 							as="pluginTypes"
 							groupBy="list_type"
 							groupKey="list_type">
-							<li><f:translate key="LLL:EXT:fluiddisplay/Samples/locallang.xml:plugin_of_type" arguments="{0: list_type}" />
+							<li><f:translate key="LLL:EXT:fluiddisplay/Samples/locallang.xlf:plugin_of_type" arguments="{0: list_type}" />
 								<ol>
 									<f:for each="{pluginTypes}" as="plugin">
 										<!--Use a partial to avoid code duplication-->
@@ -51,17 +51,17 @@ SELECT * FROM tt_content
 </f:groupedFor>
 </ul>
 
-<h2><f:translate key="LLL:EXT:fluiddisplay/Samples/locallang.xml:expression_view_helper" /></h2>
-<p><f:translate key="LLL:EXT:fluiddisplay/Samples/locallang.xml:expression_view_helper_details" /></p>
+<h2><f:translate key="LLL:EXT:fluiddisplay/Samples/locallang.xlf:expression_view_helper" /></h2>
+<p><f:translate key="LLL:EXT:fluiddisplay/Samples/locallang.xlf:expression_view_helper_details" /></p>
 <p>
-	<expression:evaluate><f:translate key="LLL:EXT:fluiddisplay/Samples/locallang.xml:expression_evaluation" /> "tsfe:id": \{tsfe:id\}</expression:evaluate>
+	<expression:evaluate><f:translate key="LLL:EXT:fluiddisplay/Samples/locallang.xlf:expression_evaluation" /> "tsfe:id": \{tsfe:id\}</expression:evaluate>
 </p>
 <p>
-	<expression:evaluate><f:translate key="LLL:EXT:fluiddisplay/Samples/locallang.xml:expression_evaluation" /> "gp:tx_displaycontroller|foo": \{gp:tx_displaycontroller|foo\}</expression:evaluate>
+	<expression:evaluate><f:translate key="LLL:EXT:fluiddisplay/Samples/locallang.xlf:expression_evaluation" /> "gp:tx_displaycontroller|foo": \{gp:tx_displaycontroller|foo\}</expression:evaluate>
 </p>
 <p>
-	<expression:evaluate><f:translate key="LLL:EXT:fluiddisplay/Samples/locallang.xml:expression_evaluation" /> "vars:foo": \{vars:foo\}</expression:evaluate>
+	<expression:evaluate><f:translate key="LLL:EXT:fluiddisplay/Samples/locallang.xlf:expression_evaluation" /> "vars:foo": \{vars:foo\}</expression:evaluate>
 </p>
 <p>
-	<expression:evaluate><f:translate key="LLL:EXT:fluiddisplay/Samples/locallang.xml:expression_evaluation" /> "vars:foo->fullQuoteStr:tt_content": \{vars:foo->fullQuoteStr:tt_content\}</expression:evaluate>
+	<expression:evaluate><f:translate key="LLL:EXT:fluiddisplay/Samples/locallang.xlf:expression_evaluation" /> "vars:foo->fullQuoteStr:tt_content": \{vars:foo->fullQuoteStr:tt_content\}</expression:evaluate>
 </p>

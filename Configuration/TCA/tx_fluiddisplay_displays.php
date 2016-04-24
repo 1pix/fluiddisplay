@@ -5,7 +5,7 @@ if (!defined ('TYPO3_MODE')) {
 
 return array(
 	'ctrl' => array(
-		'title' => 'LLL:EXT:fluiddisplay/Resources/Private/Language/locallang_db.xml:tx_fluiddisplay_displays',
+		'title' => 'LLL:EXT:fluiddisplay/Resources/Private/Language/locallang_db.xlf:tx_fluiddisplay_displays',
 		'label' => 'title',
 		'descriptionColumn' => 'description',
 		'tstamp' => 'tstamp',
@@ -27,7 +27,7 @@ return array(
 	'columns' => array(
 		'hidden' => array(
 			'exclude' => 1,
-			'label' => 'LLL:EXT:lang/locallang_general.xml:LGL.hidden',
+			'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.hidden',
 			'config' => array(
 				'type' => 'check',
 				'default' => '0'
@@ -35,7 +35,7 @@ return array(
 		),
 		'title' => array(
 			'exclude' => 0,
-			'label' => 'LLL:EXT:fluiddisplay/Resources/Private/Language/locallang_db.xml:tx_fluiddisplay_displays.title',
+			'label' => 'LLL:EXT:fluiddisplay/Resources/Private/Language/locallang_db.xlf:tx_fluiddisplay_displays.title',
 			'config' => array(
 				'type' => 'input',
 				'size' => '30',
@@ -44,7 +44,7 @@ return array(
 		),
 		'description' => array(
 			'exclude' => 0,
-			'label' => 'LLL:EXT:fluiddisplay/Resources/Private/Language/locallang_db.xml:tx_fluiddisplay_displays.description',
+			'label' => 'LLL:EXT:fluiddisplay/Resources/Private/Language/locallang_db.xlf:tx_fluiddisplay_displays.description',
 			'config' => array(
 				'type' => 'text',
 				'cols' => '40',
@@ -53,7 +53,7 @@ return array(
 		),
 		'template' => array(
 			'exclude' => 0,
-			'label' => 'LLL:EXT:fluiddisplay/Resources/Private/Language/locallang_db.xml:tx_fluiddisplay_displays.template',
+			'label' => 'LLL:EXT:fluiddisplay/Resources/Private/Language/locallang_db.xlf:tx_fluiddisplay_displays.template',
 			'config' => array(
 				'type' => 'input',
 				'size' => '30',
