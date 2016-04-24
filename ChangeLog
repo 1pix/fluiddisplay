@@ -1,6 +1,7 @@
 2016-04-24 Francois Suter (Cobweb)  <typo3@cobweb.ch>
 
 	* Added composer manifest, resolves #75891
+	* Reformatted code according to PSR-2, resolves #75892
 
 2015-09-27 Francois Suter (Cobweb)  <typo3@cobweb.ch>
 

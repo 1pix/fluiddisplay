@@ -39,24 +39,26 @@ use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper;
  * @subpackage tx_fluiddisplay
  * @author Francois Suter <typo3@cobweb.ch>
  */
-class SubstitutePageTitleViewHelper extends AbstractViewHelper {
+class SubstitutePageTitleViewHelper extends AbstractViewHelper
+{
 
-	/**
-	 * Substitutes the page title with the view helper's content
-	 *
-	 * @param boolean $output Set to true if the content of the tag should be returned
-	 * @return string The content of the tag or an empty string
-	 */
-	public function render($output = FALSE) {
-		$output = (boolean)$output;
-		// Render the content and set it as the page title
-		$content = $this->renderChildren();
-		if (!empty($content)) {
-			$GLOBALS['TSFE']->page['title'] = $content;
-			$GLOBALS['TSFE']->indexedDocTitle = $content;
-		}
-		// If output is requested, return content. Otherwise return empty string.
-		return ($output) ? $content : '';
-	}
+    /**
+     * Substitutes the page title with the view helper's content
+     *
+     * @param boolean $output Set to true if the content of the tag should be returned
+     * @return string The content of the tag or an empty string
+     */
+    public function render($output = false)
+    {
+        $output = (boolean)$output;
+        // Render the content and set it as the page title
+        $content = $this->renderChildren();
+        if (!empty($content)) {
+            $GLOBALS['TSFE']->page['title'] = $content;
+            $GLOBALS['TSFE']->indexedDocTitle = $content;
+        }
+        // If output is requested, return content. Otherwise return empty string.
+        return ($output) ? $content : '';
+    }
 
 }
