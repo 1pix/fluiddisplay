@@ -1,0 +1,32 @@
+{
+	"name": "tesseract/fluiddisplay",
+	"type": "typo3-cms-extension",
+	"description": "Use Fluid-based templates to display any kind of data returned by a Data Provider. More info on http://www.typo3-tesseract.com.",
+	"license": [
+		"GPL-2.0+"
+	],
+	"authors": [
+		{
+			"name": "Fabien Udriot",
+			"role": "Developer"
+		},
+		{
+			"name": "Francois Suter",
+			"role": "Developer"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Tesseract\\Fluiddisplay\\": "Classes/"
+		}
+	},
+	"version": "2.0.0",
+	"require": {
+		"typo3/cms-core": ">=7.6.0,<8.0",
+		"tesseract/tesseract": ">=2.0.0"
+	},
+	"replace": {
+		"fluiddisplay": "self.version",
+		"typo3-ter/fluiddisplay": "self.version"
+	}
+}

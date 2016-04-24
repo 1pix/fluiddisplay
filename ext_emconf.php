@@ -27,12 +27,12 @@ $EM_CONF[$_EXTKEY] = array (
   'clearCacheOnLoad' => 0,
   'lockType' => '',
   'author_company' => '',
-  'version' => '2.0.0-dev',
+  'version' => '2.0.0',
   'constraints' =>
   array (
     'depends' =>
     array (
-      'typo3' => '6.2.0-7.5.99',
+      'typo3' => '7.6.0-7.99.99',
       'tesseract' => '2.0.0-0.0.0',
     ),
     'conflicts' =>
@@ -46,7 +46,7 @@ $EM_CONF[$_EXTKEY] = array (
   'suggests' =>
   array (
   ),
-  'comment' => 'Compatibility with TYPO3 CMS 6.2.',
+  'comment' => 'Verified compatibility with TYPO3 CMS 7; refactored using namespaces.',
   'user' => 'francois',
 );
 

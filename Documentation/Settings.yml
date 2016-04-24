@@ -4,8 +4,8 @@
 
 ---
 conf.py:
-  copyright: 2002-2015
+  copyright: 2008-2016
   project: Fluid-based Data Consumer
-  version: 2.0.0
-  release: 2.0.0-dev
+  version: 2.0
+  release: 2.0.0
 ...
