@@ -94,7 +94,7 @@ class DataConsumer extends FrontendConsumerBase
     /**
      * Passes a data structure to the Data Consumer.
      *
-     * @param array $structur Standardised data structure
+     * @param array $structure Standardised data structure
      * @return void
      */
     public function setDataStructure($structure)
@@ -146,7 +146,6 @@ class DataConsumer extends FrontendConsumerBase
             $filePath = Utilities::getTemplateFilePath($this->consumerData['template']);
 
             // Instantiate a Fluid stand-alone view and load the template file
-            /** @var $view StandaloneView */
             $view = GeneralUtility::makeInstance(StandaloneView::class);
             $view->setTemplatePathAndFilename($filePath);
             // Assign the Tesseract Data Structure

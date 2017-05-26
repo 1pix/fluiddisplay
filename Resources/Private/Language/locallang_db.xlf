@@ -15,6 +15,9 @@
 			<trans-unit id="tx_fluiddisplay_displays.template" xml:space="preserve">
 				<source>Fluid Template</source>
 			</trans-unit>
+			<trans-unit id="tx_fluiddisplay_displays.template.popup" xml:space="preserve">
+				<source>Choose a template file</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

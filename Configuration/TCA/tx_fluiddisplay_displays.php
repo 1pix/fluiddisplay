@@ -58,7 +58,7 @@ return array(
 				'type' => 'input',
 				'size' => '30',
 				'eval' => 'required,trim',
-				'default' => 'EXT:fluiddisplay/Samples/sampleTemplate.html',
+				// TODO: remove old wizard definition and replace with new one when TYPO3 v7 compatibility is dropped
 				'wizards' => array(
 					'_PADDING' => 2,
 					'link' => array(

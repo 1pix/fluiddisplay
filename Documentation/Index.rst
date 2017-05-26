@@ -26,7 +26,7 @@ Fluid-based Display
         forEditors, forIntermediates
 
     :Copyright:
-        2002-2015
+        2010-2017
 
     :Author:
         Francois Suter (Cobweb)
