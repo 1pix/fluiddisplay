@@ -157,6 +157,20 @@ class DataConsumer extends FrontendConsumerBase
                     $preProcessor->preProcessView($view, $this);
                 }
             }
+            // Send some information to debug output
+            $this->controller->addMessage(
+                    $this->extKey,
+                    'Template file: ' . $filePath,
+                    '',
+                    FlashMessage::INFO
+            );
+            $this->controller->addMessage(
+                    $this->extKey,
+                    'Received data structure',
+                    '',
+                    FlashMessage::INFO,
+                    $this->structure
+            );
             // Render the result
             $this->result = $view->render();
 
