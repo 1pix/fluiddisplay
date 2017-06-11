@@ -45,7 +45,7 @@ field to get the standard input field. The so-called link preview whill show up 
 
 .. important::
 
-   Using the :code:`EXT:` syntax is not recommended anymore. It will likely be droppped entirely
+   Using the :code:`EXT:` syntax is not recommended anymore. It will likely be dropped entirely
    in a future version, to make things more consistent with the TYPO3 CMS Core.
 
    If you store your templates inside an extension, you should create a File Storage pointing
